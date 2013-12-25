@@ -54,12 +54,14 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<json>, [">= 1.5.3"])
       s.add_runtime_dependency(%q<sqlite3>, [">= 1.3.3"])
       s.add_runtime_dependency(%q<dropbox-sdk>, [">= 1.6.2"])
+      s.add_runtime_dependency(%s<launchy>)
     else
       s.add_dependency(%q<multipart-post>, [">= 1.1.2"])
       s.add_dependency(%q<oauth>, [">= 0.4.5"])
       s.add_dependency(%q<json>, [">= 1.5.3"])
       s.add_dependency(%q<sqlite3>, [">= 1.3.3"])
       s.add_dependency(%q<dropbox-sdk>, [">= 1.6.2"])
+      s.add_runtime_dependency(%s<launchy>)
     end
   else
     s.add_dependency(%q<multipart-post>, [">= 1.1.2"])
@@ -67,6 +69,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<json>, [">= 1.5.3"])
     s.add_dependency(%q<sqlite3>, [">= 1.3.3"])
     s.add_dependency(%q<dropbox-sdk>, [">= 1.6.2"])
+    s.add_runtime_dependency(%s<launchy>)
   end
 end
 

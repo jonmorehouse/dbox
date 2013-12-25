@@ -1,3 +1,5 @@
+require 'launchy'
+
 module Dbox
   NUM_TRIES = 3
   TIME_BETWEEN_TRIES = 3 # in seconds
@@ -23,6 +25,11 @@ module Dbox
       authorize_url = flow.start()
 
       puts '1. Go to: ' + authorize_url
+      
+      # open the url in the browser to make life a little easier ...
+      Launchy.open authorize_url
+
+      # print directions as needed
       puts '2. Click "Allow" (you might have to log in first)'
       puts '3. Copy the authorization code'
       print 'Enter the authorization code here: '
