@@ -5,13 +5,13 @@
 
 Gem::Specification.new do |s|
   s.name = "dbox"
-  s.version = "0.8.0"
+  s.version = "0.8.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Ken Pratt"]
+  s.authors = ["Ken Pratt", "Jon Morehouse"]
   s.date = "2013-10-30"
   s.description = "An easy-to-use Dropbox client with fine-grained control over syncs."
-  s.email = "ken@kenpratt.net"
+  s.email = "morehousej09@gmail.com"
   s.executables = ["dbox"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
